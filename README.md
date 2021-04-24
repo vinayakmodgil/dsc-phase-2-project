@@ -1,66 +1,55 @@
-# Phase 2 Project
+## Final Project Submission
 
-Another module down--you're almost half way there!
+## King County Analysis
 
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-2-project-campus/master/halfway-there.gif)
+## Author: Vinayak Modgil
 
-All that remains in Phase 2 is to put our newfound data science skills to use with a large project! This project should take 20 to 30 hours to complete.
+## Overview: 
+This project uses Multiple Linear Regression to find the best parameters suitable for maximum house prices.
 
-## Project Overview
+## Business Problem:
+Potential real estate tycoons are looking to purchase houses so that they can sell it out to future house owners. You are equipped with the data and you need to advise the stakeholders on the affect of different parameters that affect the value of houses in the King County.
 
-For this project, you will use regression modeling to analyze house sales in a northwestern county.
+## Data
+Data of nearly 21000 houses in KC is given from which 15000 houses have quality data.
 
-### The Data
+## Methods:
+We use machine learning model of Multiple Linear Regression to find the best fit line for the given data.
 
-This project uses the King County House Sales dataset, which can be found in  `kc_house_data.csv` in the data folder in this repo. The description of the column names can be found in `column_names.md` in the same folder. As with most real world data sets, the column names are not perfectly described, so you'll have to do some research or use your best judgment if you have questions about what the data means.
+## Results
 
-It is up to you to decide what data from this dataset to use and how to use it. If you are feeling overwhelmed or behind, we recommend you ignore some or all of the following features:
+Maximum prices tend towards large sqft above ground (4000-5000).
+<img src="download.png" width=80%>
 
-* date
-* view
-* sqft_above
-* sqft_basement
-* yr_renovated
-* zipcode
-* lat
-* long
-* sqft_living15
-* sqft_lot15
+High graded houses usually have higher prices.
+<img src="download (1).png" width=80%>
 
-### Business Problem
+Larger houses with High grade scores are more expensive
+<img src="download (2).png" width=80%>
 
-It is up to you to define a stakeholder and business problem appropriate to this dataset.
+The pricing of houses in KC is linearly related with large houses having a basement
+<img src="download (3).png" width=80%>
 
-If you are struggling to define a stakeholder, we recommend you complete a project for a real estate agency that helps homeowners buy and/or sell homes. A business problem you could focus on for this stakeholder is the need to provide advice to homeowners about how home renovations might increase the estimated value of their homes, and by what amount.
+## The following conclusions can be drawn from our analysis:
+- The area above the basement is key when purchasing houses. The main area to focus is on purchasing houses with adequate amount of area excluding the basement.
+- Basements also do play a key role in valuing houses in King County. If a house has a basement, it tends to have more value.
+- Grading done according to the KC grading system plays a significant role in valuing houses in KC.
 
-## Deliverables
+## Here are the recommendations based on our findings:
+>- Firstly, we recommend purchasing houses with 4000-5000 sqft area above basement, as they hold the most value.
+>- Secondly, purchasing houses with 4000-5000 sqft and having a basement will hold tremendous value in the future.
+>- Lastly, Highly scored houses (according to KC grading system) but not the largest (in terms of sqft above ground) will be profitable while selling the houses to future house owners.
 
-There are three deliverables for this project:
+## For more Information
 
-* A **GitHub repository**
-* A **Jupyter Notebook**
-* A **non-technical presentation**
+See the full analysis in <a href="https://github.com/vinayakmodgil/dsc-phase-2-project/blob/master/student.ipynb">Jupyter Notebook</a>  or review this <a href="https://github.com/vinayakmodgil/dsc-phase-2-project/blob/master/presentation.pdf">presentation</a>.
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic for instructions on creating and submitting your deliverables. Refer to the rubric associated with this assignment for specifications describing high-quality deliverables.
+For additional info, contact Vinayak Modgil at vinayak.modgil@gmail.com
 
-### Key Points
+## Repository Structure
+├── data
+├── images
+├── README.md
+├── presentation.pdf
+└── student
 
-* **Your deliverables should explicitly address each step of the data science process.** Refer to [the Data Science Process lesson](https://github.com/learn-co-curriculum/dsc-data-science-processes) from Topic 19 for more information about process models you can use.
-
-* **Your Jupyter Notebook should demonstrate an iterative approach to modeling.** This means that you begin with a basic model, evaluate it, and then provide justification for and proceed to a new model. After you finish refining your models, you should provide 1-3 paragraphs discussing your final model - this should include interpreting at least 3 important parameter estimates or statistics.
-
-* **Based on the results of your models, your notebook and presentation should discuss at least two features that have strong relationships with housing prices.**
-
-## Getting Started
-
-Start on this project by forking and cloning [this project repository](https://github.com/learn-co-curriculum/dsc-phase-2-project) to get a local copy of the dataset.
-
-We recommend structuring your project repository similar to the structure in [the Phase 1 Project Template](https://github.com/learn-co-curriculum/dsc-project-template). You can do this either by creating a new fork of that repository to work in or by building a new repository from scratch that mimics that structure.
-
-## Project Submission and Review
-
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic to learn how to submit your project and how it will be reviewed. Your project must pass review for you to progress to the next Phase.
-
-## Summary
-
-This project will give you a valuable opportunity to develop your data science skills using real-world data. The end-of-phase projects are a critical part of the program because they give you a chance to bring together all the skills you've learned, apply them to realistic projects for a business stakeholder, practice communication skills, and get feedback to help you improve. You've got this!
